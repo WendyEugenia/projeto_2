@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.caixa_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 35px;
+}
+
+.logo {
+    height: 65px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.texto_header {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.texto_header li {
+    margin: 0 50px;
+    font-weight: bold
+}
+
+.texto_header2 {
+    text-decoration: none;
+    font-size: 20px;
+    color: #3F3F95;
+    padding: 10px;
+}
+.background {
+    margin-top: 0;
+}
+
+.background-imagem {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.texto-imagem {
+    position: absolute;
+    top: 23%;
+    left: 50%; 
+    transform: translate(-10%, -60%); 
+    font-size: 4rem;
+    color: #EBEBEB;
+    border: 1px solid rgb(139, 137, 137); 
+    padding: 20px; 
+    border-radius: 10px;
+  
+ }
+
+
+.section-main {
+    padding: 100px 50px;
+    background-color: #EBEBEB;
+    margin-bottom: 50px;
+
+
+ }
+
+.section-culto{
+    margin: 50px;
+    border-radius: 20px;
+    border: solid 1px;
+}
+.section-culto, .section-evento, .formulario{
+
+    padding: 80px 20px;
+    margin-bottom: 30px;
+
+
+}
+
+
+.section-titulo, .titulo-culto, .evento-titulo, .titulo-formulario, .section-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #000;
+    padding: 20px;
+    
+}
+
+.section-texto, .form-label {
+    color: #666;
+    margin-bottom: 20px;
+    text-align: left;
+    justify-content: center;
+}
+
+.lista-itens {
+    list-style-type: disc;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.culto-caixa {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.culto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px;
+    transition: background-color 0.3s;
+}
+
+.culto:hover {
+    background-color: #EBEBEB;
+}
+
+.culto h3, .culto p {
+    margin: 10px;
+    color: #000;
+}
+
+.section-evento{
+    background-color: #EBEBEB;
+}
+
+.eventos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.evento-img {
+    width: 23%;
+    margin: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-formulario {
+    background-color: #fff;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #EBEBEB;
+    border-radius: 10px;
+    max-width: 450px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 27px 10px 15px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    background-color: #3F3F95;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #333;
+}
+
+.section-mapa{
+    justify-content: center;
+
+
+}
+.map-container {
+    margin: 20px 0;
+
+
+}
+
+.footer {
+    background: linear-gradient(to right, #000, #333);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.success-notification {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Media queries para responsividade */
+@media (max-width: 1200px) {
+    .texto-imagem {
+        font-size: 3rem;
+        left: 30%;
+        transform: translate(-30%, -50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .texto-imagem {
+        font-size: 2.5rem;
+        left: 40%;
+        transform: translate(-40%, -50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .texto-imagem {
+        font-size: 2rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
